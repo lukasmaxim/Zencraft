@@ -1,3 +1,24 @@
+### Week 2
+---
+David:
+- [ ] Set up basic architecture in python
+- [ ] Create MCEdit Plugin
+- [ ] Create FrontEnd
+
+Lukas:
+- [ ] Set up the DB (json file)
+- [ ] Create some structures for the DB
+
+Siena:
+- [ ] See what we can get out of TalkOfTheTown
+- [ ] Train GPT-2 on some fantasy/mysticism/nature spirits texts
+- [ ] Combine TOTT with GPT-2
+
+Simba:
+- [ ] Look into options for PCG Core
+- [ ] Depending on Siena's output, come up with a way to use TOTT output in PCG Core
+
+
 ### Week 1
 ---
 
