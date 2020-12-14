@@ -31,17 +31,24 @@ class ZenCraft(SimpleCommandPlugin):
             'value': 1,
             'min': 0,
             'max': 100,
-            'name': 'yOffset',
+            'name': 'yOffsetPlane',
             'text': 'Plane Height',
         },
-
+        {
+            'type': 'int',
+            'value': 1,
+            'min': 0,
+            'max': 100,
+            'name': 'yOffsetStructures',
+            'text': 'Structure Height',
+        },
     ]
 
     def perform(self, dimension, selection, options):
         dimensions = [-options['planeSize']//2, options['planeSize']//2, -options['planeSize']//2, options['planeSize']//2]
         frontend = FrontEnd(options['dbName'], dimensions)
 
-        blocks = frontend.generate(options['yOffset'], options['groundMaterial'])
+        blocks = frontend.generate(options['yOffsetStructures'], options['yOffsetPlane'], options['groundMaterial'])
 
         for block in blocks:
             dimension.setBlock(block['x'], block['y'], block['z'], block['material'])
