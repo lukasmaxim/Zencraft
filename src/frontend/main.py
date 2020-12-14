@@ -14,7 +14,7 @@ class FrontEnd():
         self.dimensions = dimensions
         self.pcg = PCGCore(db_name, dimensions)
 
-    def generate(self, y_offset, ground_material):
+    def generate(self, y_offset_structures, y_offset_plane, ground_material):
         blocks = []
 
         # create ground
@@ -22,7 +22,7 @@ class FrontEnd():
             for z in range(self.dimensions[2], (self.dimensions[3]+1)):
                 blocks.append({
                         'x':x,
-                        'y':0,
+                        'y':0+y_offset_plane,
                         'z':z,
                         'material':ground_material
                     })
@@ -35,7 +35,7 @@ class FrontEnd():
                 for pos in substruct['positions']:
                     blocks.append({
                             'x':pos[0]+structure['x'],
-                            'y':pos[1]+y_offset,
+                            'y':pos[1]+y_offset_structures,
                             'z':pos[2]+structure['y'],
                             'material':substruct['material']
                         })        
