@@ -227,6 +227,10 @@ class Level:
             })
         return rules
     
+    def serializeRules(self, file_path):
+        with open(file_path, 'w') as json_file:
+            json.dump(self.getRules(), json_file, indent = 6)
+    
     def __str__(self):
         return "\n" + "\n".join(
             [  "".join( ["\t"]  +   [   str(self.map[(i,j)])
