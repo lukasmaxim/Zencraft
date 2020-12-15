@@ -1,1 +1,125 @@
-{"dimensions": [3, 3, 5], "structure": [{"material": "minecraft:sand", "position": [[0, 0, 0], [0, 0, 1], [0, 0, 2], [0, 0, 3], [0, 0, 4], [1, 0, 0], [1, 0, 1], [1, 0, 2], [1, 0, 3], [1, 0, 4], [2, 0, 0], [2, 0, 1], [2, 0, 2], [2, 0, 3], [2, 0, 4]]}, {"material": "minecraft:cobblestone", "position": [[1, 1, 1], [1, 1, 3]]}, {"material": "minecraft:stone_slab", "position": [[1, 1, 2]]}, {"material": "minecraft:stone_button", "position": [[1, 2, 3]]}]}
+{
+    "dimensions": [
+        3,
+        3,
+        5
+    ],
+    "offset": -1,
+    "structure": [
+        {
+            "material": "minecraft:sand",
+            "position": [
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    0,
+                    3
+                ],
+                [
+                    0,
+                    0,
+                    4
+                ],
+                [
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    0,
+                    2
+                ],
+                [
+                    1,
+                    0,
+                    3
+                ],
+                [
+                    1,
+                    0,
+                    4
+                ],
+                [
+                    2,
+                    0,
+                    0
+                ],
+                [
+                    2,
+                    0,
+                    1
+                ],
+                [
+                    2,
+                    0,
+                    2
+                ],
+                [
+                    2,
+                    0,
+                    3
+                ],
+                [
+                    2,
+                    0,
+                    4
+                ]
+            ]
+        },
+        {
+            "material": "minecraft:cobblestone",
+            "position": [
+                [
+                    1,
+                    1,
+                    1
+                ],
+                [
+                    1,
+                    1,
+                    3
+                ]
+            ]
+        },
+        {
+            "material": "minecraft:stone_slab",
+            "position": [
+                [
+                    1,
+                    1,
+                    2
+                ]
+            ]
+        },
+        {
+            "material": "minecraft:stone_button",
+            "position": [
+                [
+                    1,
+                    2,
+                    3
+                ]
+            ]
+        }
+    ]
+}

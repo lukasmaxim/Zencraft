@@ -1,1 +1,95 @@
-{"dimensions": [3, 1, 5], "structure": [{"material": "minecraft:leaves", "position": [[0, 0, 0], [0, 0, 1], [1, 0, 0]]}, {"material": "minecraft:red_flower", "position": [[0, 0, 2]]}, {"material": "minecraft:tallgrass", "position": [[0, 0, 3], [1, 0, 4], [2, 0, 0], [2, 0, 3]]}, {"material": "minecraft:fence", "position": [[1, 0, 1], [1, 0, 2], [1, 0, 3]]}, {"material": "minecraft:tallgrass", "position": [[2, 0, 2]]}]}
+{
+    "dimensions": [
+        3,
+        1,
+        5
+    ],
+    "offset": 0,
+    "structure": [
+        {
+            "material": "minecraft:leaves",
+            "position": [
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    0,
+                    0
+                ]
+            ]
+        },
+        {
+            "material": "minecraft:red_flower",
+            "position": [
+                [
+                    0,
+                    0,
+                    2
+                ]
+            ]
+        },
+        {
+            "material": "minecraft:tallgrass",
+            "position": [
+                [
+                    0,
+                    0,
+                    3
+                ],
+                [
+                    1,
+                    0,
+                    4
+                ],
+                [
+                    2,
+                    0,
+                    0
+                ],
+                [
+                    2,
+                    0,
+                    3
+                ]
+            ]
+        },
+        {
+            "material": "minecraft:fence",
+            "position": [
+                [
+                    1,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    0,
+                    2
+                ],
+                [
+                    1,
+                    0,
+                    3
+                ]
+            ]
+        },
+        {
+            "material": "minecraft:tallgrass",
+            "position": [
+                [
+                    2,
+                    0,
+                    2
+                ]
+            ]
+        }
+    ]
+}
