@@ -215,19 +215,19 @@ class Level:
         else:
             return False
     
-    def getRules(self):
-        rules = []
+    def getStructures(self):
+        structs = []
         for struct in self.structures:
-            rules.append({
+            structs.append({
                 'name': struct.key,
-                'position': [struct.x, 0, struct.y], # NOTE: Minecraft is in xz-axis so the y-coord is z in Minecraft
+                'position': [struct.x, struct.y], # NOTE: Minecraft is in xz-axis so the y-coord is z in Minecraft
                 'dim': STRUCTURES[struct.key]['dim'],
                 'orientation': '',
                 'rules': STRUCTURES[struct.key]['rules']
             })
-        return rules
+        return structs
     
-    def serializeRules(self, file_path):
+    def serializeStructures(self, file_path):
         with open(file_path, 'w') as json_file:
             json.dump(self.getRules(), json_file, indent = 6)
     

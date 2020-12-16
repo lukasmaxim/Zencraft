@@ -33,4 +33,4 @@ class PCGCore:
         for struct in level.structures:
             print(struct)
 
-        return level.structures
+        return level.getStructures()
