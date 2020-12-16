@@ -7,7 +7,7 @@
     "offset": 0,
     "structure": [
         {
-            "material": "minecraft:wool",
+            "material": "minecraft:wool[color=silver]",
             "position": [
                 [
                     0,
@@ -252,7 +252,7 @@
             ]
         },
         {
-            "material": "minecraft:stone",
+            "material": "minecraft:stone[variant=diorite]",
             "position": [
                 [
                     0,
@@ -472,7 +472,7 @@
             ]
         },
         {
-            "material": "minecraft:stone",
+            "material": "minecraft:stone[variant=smooth_andesite]",
             "position": [
                 [
                     0,
@@ -1387,7 +1387,7 @@
             ]
         },
         {
-            "material": "minecraft:acacia_fence",
+            "material": "minecraft:acacia_fence[west=false,east=false,north=false,south=false]",
             "position": [
                 [
                     1,
@@ -2222,7 +2222,7 @@
             ]
         },
         {
-            "material": "minecraft:acacia_fence_gate",
+            "material": "minecraft:acacia_fence_gate[facing=east,in_wall=false,open=false,powered=false]",
             "position": [
                 [
                     1,
@@ -2282,7 +2282,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_slab2",
+            "material": "minecraft:stone_slab2[variant=red_sandstone,half=top]",
             "position": [
                 [
                     1,
@@ -2487,7 +2487,7 @@
             ]
         },
         {
-            "material": "minecraft:red_sandstone_stairs",
+            "material": "minecraft:red_sandstone_stairs[facing=south,shape=straight,half=top]",
             "position": [
                 [
                     1,
@@ -2567,7 +2567,7 @@
             ]
         },
         {
-            "material": "minecraft:red_sandstone_stairs",
+            "material": "minecraft:red_sandstone_stairs[facing=east,shape=straight,half=top]",
             "position": [
                 [
                     1,
@@ -2677,7 +2677,7 @@
             ]
         },
         {
-            "material": "minecraft:red_sandstone_stairs",
+            "material": "minecraft:red_sandstone_stairs[facing=north,shape=straight,half=top]",
             "position": [
                 [
                     1,
@@ -2802,7 +2802,7 @@
             ]
         },
         {
-            "material": "minecraft:wooden_slab",
+            "material": "minecraft:wooden_slab[variant=dark_oak,half=top]",
             "position": [
                 [
                     1,
@@ -3532,7 +3532,7 @@
             ]
         },
         {
-            "material": "minecraft:double_wooden_slab",
+            "material": "minecraft:double_wooden_slab[variant=dark_oak]",
             "position": [
                 [
                     1,
@@ -4042,7 +4042,7 @@
             ]
         },
         {
-            "material": "minecraft:wooden_slab",
+            "material": "minecraft:wooden_slab[variant=dark_oak,half=bottom]",
             "position": [
                 [
                     1,
@@ -4762,7 +4762,7 @@
             ]
         },
         {
-            "material": "minecraft:stained_hardened_clay",
+            "material": "minecraft:stained_hardened_clay[color=red]",
             "position": [
                 [
                     2,
@@ -5207,7 +5207,7 @@
             ]
         },
         {
-            "material": "minecraft:concrete",
+            "material": "minecraft:concrete[color=white]",
             "position": [
                 [
                     2,
@@ -5792,7 +5792,7 @@
             ]
         },
         {
-            "material": "minecraft:acacia_fence_gate",
+            "material": "minecraft:acacia_fence_gate[facing=south,in_wall=false,open=false,powered=false]",
             "position": [
                 [
                     2,
@@ -5852,7 +5852,7 @@
             ]
         },
         {
-            "material": "minecraft:acacia_fence_gate",
+            "material": "minecraft:acacia_fence_gate[facing=north,in_wall=false,open=false,powered=false]",
             "position": [
                 [
                     2,
@@ -5907,7 +5907,7 @@
             ]
         },
         {
-            "material": "minecraft:red_sandstone",
+            "material": "minecraft:red_sandstone[type=smooth_red_sandstone]",
             "position": [
                 [
                     2,
@@ -6592,7 +6592,7 @@
             ]
         },
         {
-            "material": "minecraft:dark_oak_stairs",
+            "material": "minecraft:dark_oak_stairs[facing=south,shape=straight,half=bottom]",
             "position": [
                 [
                     2,
@@ -6687,7 +6687,7 @@
             ]
         },
         {
-            "material": "minecraft:dark_oak_stairs",
+            "material": "minecraft:dark_oak_stairs[facing=east,shape=straight,half=bottom]",
             "position": [
                 [
                     2,
@@ -6797,7 +6797,7 @@
             ]
         },
         {
-            "material": "minecraft:wooden_slab",
+            "material": "minecraft:wooden_slab[variant=acacia,half=top]",
             "position": [
                 [
                     3,
@@ -6962,7 +6962,7 @@
             ]
         },
         {
-            "material": "minecraft:dark_oak_stairs",
+            "material": "minecraft:dark_oak_stairs[facing=north,shape=straight,half=bottom]",
             "position": [
                 [
                     3,
@@ -7097,7 +7097,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_brick_stairs",
+            "material": "minecraft:stone_brick_stairs[facing=north,shape=straight,half=bottom]",
             "position": [
                 [
                     5,
@@ -7147,7 +7147,7 @@
             ]
         },
         {
-            "material": "minecraft:stained_glass",
+            "material": "minecraft:stained_glass[color=yellow]",
             "position": [
                 [
                     6,
@@ -7157,7 +7157,7 @@
             ]
         },
         {
-            "material": "minecraft:anvil",
+            "material": "minecraft:anvil[facing=east,damage=0]",
             "position": [
                 [
                     6,
@@ -7167,7 +7167,7 @@
             ]
         },
         {
-            "material": "minecraft:birch_fence",
+            "material": "minecraft:birch_fence[west=false,east=false,north=false,south=false]",
             "position": [
                 [
                     6,
@@ -7187,7 +7187,7 @@
             ]
         },
         {
-            "material": "minecraft:end_rod",
+            "material": "minecraft:end_rod[facing=up]",
             "position": [
                 [
                     6,
@@ -7207,7 +7207,7 @@
             ]
         },
         {
-            "material": "minecraft:end_rod",
+            "material": "minecraft:end_rod[facing=down]",
             "position": [
                 [
                     6,
@@ -7222,7 +7222,7 @@
             ]
         },
         {
-            "material": "minecraft:dark_oak_stairs",
+            "material": "minecraft:dark_oak_stairs[facing=west,shape=straight,half=bottom]",
             "position": [
                 [
                     7,
@@ -7332,7 +7332,7 @@
             ]
         },
         {
-            "material": "minecraft:red_sandstone_stairs",
+            "material": "minecraft:red_sandstone_stairs[facing=west,shape=straight,half=top]",
             "position": [
                 [
                     9,
@@ -7447,7 +7447,7 @@
             ]
         },
         {
-            "material": "minecraft:acacia_fence_gate",
+            "material": "minecraft:acacia_fence_gate[facing=west,in_wall=false,open=false,powered=false]",
             "position": [
                 [
                     11,

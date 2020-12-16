@@ -7,7 +7,7 @@
     "offset": -1,
     "structure": [
         {
-            "material": "minecraft:grass",
+            "material": "minecraft:grass[snowy=false]",
             "position": [
                 [
                     0,
@@ -222,7 +222,7 @@
             ]
         },
         {
-            "material": "minecraft:dirt",
+            "material": "minecraft:dirt[variant=dirt,snowy=false]",
             "position": [
                 [
                     0,
@@ -377,7 +377,7 @@
             ]
         },
         {
-            "material": "minecraft:leaves",
+            "material": "minecraft:leaves[variant=jungle,check_decay=false,decayable=false]",
             "position": [
                 [
                     0,
@@ -462,7 +462,7 @@
             ]
         },
         {
-            "material": "minecraft:tallgrass",
+            "material": "minecraft:tallgrass[type=fern]",
             "position": [
                 [
                     1,

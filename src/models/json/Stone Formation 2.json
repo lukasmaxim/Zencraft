@@ -7,7 +7,7 @@
     "offset": -1,
     "structure": [
         {
-            "material": "minecraft:sandstone",
+            "material": "minecraft:sandstone[type=sandstone]",
             "position": [
                 [
                     3,
@@ -202,7 +202,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_stairs",
+            "material": "minecraft:stone_stairs[facing=south,shape=straight,half=bottom]",
             "position": [
                 [
                     3,
@@ -217,7 +217,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_stairs",
+            "material": "minecraft:stone_stairs[facing=north,shape=straight,half=bottom]",
             "position": [
                 [
                     3,
@@ -227,7 +227,7 @@
             ]
         },
         {
-            "material": "minecraft:dirt",
+            "material": "minecraft:dirt[variant=dirt,snowy=false]",
             "position": [
                 [
                     4,

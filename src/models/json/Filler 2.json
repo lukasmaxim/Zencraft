@@ -4,10 +4,10 @@
         1,
         5
     ],
-    "offset": 0,
+    "offset": 1,
     "structure": [
         {
-            "material": "minecraft:leaves",
+            "material": "minecraft:leaves[variant=jungle,check_decay=false,decayable=false]",
             "position": [
                 [
                     0,
@@ -27,7 +27,7 @@
             ]
         },
         {
-            "material": "minecraft:red_flower",
+            "material": "minecraft:red_flower[type=red_tulip]",
             "position": [
                 [
                     0,
@@ -37,7 +37,7 @@
             ]
         },
         {
-            "material": "minecraft:tallgrass",
+            "material": "minecraft:tallgrass[type=tall_grass]",
             "position": [
                 [
                     0,
@@ -62,7 +62,7 @@
             ]
         },
         {
-            "material": "minecraft:fence",
+            "material": "minecraft:fence[west=false,east=false,north=false,south=false]",
             "position": [
                 [
                     1,
@@ -82,7 +82,7 @@
             ]
         },
         {
-            "material": "minecraft:tallgrass",
+            "material": "minecraft:tallgrass[type=fern]",
             "position": [
                 [
                     2,

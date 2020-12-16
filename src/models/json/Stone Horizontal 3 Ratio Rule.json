@@ -7,7 +7,7 @@
     "offset": -1,
     "structure": [
         {
-            "material": "minecraft:sand",
+            "material": "minecraft:sand[variant=sand]",
             "position": [
                 [
                     0,
@@ -102,7 +102,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_slab",
+            "material": "minecraft:stone_slab[variant=cobblestone,half=bottom]",
             "position": [
                 [
                     1,
@@ -112,7 +112,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_button",
+            "material": "minecraft:stone_button[facing=up,powered=false]",
             "position": [
                 [
                     1,

@@ -4,10 +4,10 @@
         2,
         5
     ],
-    "offest": -1,
+    "offset": -1,
     "structure": [
         {
-            "material": "minecraft:sand",
+            "material": "minecraft:sand[variant=sand]",
             "position": [
                 [
                     0,
@@ -102,7 +102,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_slab",
+            "material": "minecraft:stone_slab[variant=cobblestone,half=bottom]",
             "position": [
                 [
                     1,

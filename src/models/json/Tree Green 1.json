@@ -7,7 +7,7 @@
     "offset": 0,
     "structure": [
         {
-            "material": "minecraft:leaves",
+            "material": "minecraft:leaves[variant=oak,check_decay=false,decayable=false]",
             "position": [
                 [
                     0,
@@ -112,7 +112,7 @@
             ]
         },
         {
-            "material": "minecraft:wool",
+            "material": "minecraft:wool[color=green]",
             "position": [
                 [
                     0,
@@ -257,7 +257,7 @@
             ]
         },
         {
-            "material": "minecraft:log",
+            "material": "minecraft:log[variant=spruce,axis=x]",
             "position": [
                 [
                     1,
@@ -287,7 +287,7 @@
             ]
         },
         {
-            "material": "minecraft:log",
+            "material": "minecraft:log[variant=spruce,axis=z]",
             "position": [
                 [
                     2,
@@ -302,7 +302,7 @@
             ]
         },
         {
-            "material": "minecraft:leaves",
+            "material": "minecraft:leaves[variant=oak,check_decay=true,decayable=false]",
             "position": [
                 [
                     3,
@@ -322,7 +322,7 @@
             ]
         },
         {
-            "material": "minecraft:log",
+            "material": "minecraft:log[variant=spruce,axis=y]",
             "position": [
                 [
                     4,

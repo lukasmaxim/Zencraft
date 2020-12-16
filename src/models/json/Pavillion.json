@@ -7,7 +7,7 @@
     "offset": 0,
     "structure": [
         {
-            "material": "minecraft:carpet",
+            "material": "minecraft:carpet[color=gray]",
             "position": [
                 [
                     0,
@@ -112,7 +112,7 @@
             ]
         },
         {
-            "material": "minecraft:double_stone_slab",
+            "material": "minecraft:double_stone_slab[variant=nether_brick,seamless=false]",
             "position": [
                 [
                     0,
@@ -142,7 +142,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_slab",
+            "material": "minecraft:stone_slab[variant=nether_brick,half=bottom]",
             "position": [
                 [
                     0,
@@ -212,7 +212,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_slab",
+            "material": "minecraft:stone_slab[variant=nether_brick,half=top]",
             "position": [
                 [
                     0,
@@ -277,7 +277,7 @@
             ]
         },
         {
-            "material": "minecraft:nether_brick_fence",
+            "material": "minecraft:nether_brick_fence[west=false,east=false,north=false,south=false]",
             "position": [
                 [
                     0,
@@ -407,7 +407,7 @@
             ]
         },
         {
-            "material": "minecraft:nether_brick_stairs",
+            "material": "minecraft:nether_brick_stairs[facing=south,shape=straight,half=bottom]",
             "position": [
                 [
                     1,
@@ -437,7 +437,7 @@
             ]
         },
         {
-            "material": "minecraft:nether_brick_stairs",
+            "material": "minecraft:nether_brick_stairs[facing=east,shape=straight,half=bottom]",
             "position": [
                 [
                     1,
@@ -467,7 +467,7 @@
             ]
         },
         {
-            "material": "minecraft:birch_stairs",
+            "material": "minecraft:birch_stairs[facing=east,shape=straight,half=bottom]",
             "position": [
                 [
                     1,
@@ -477,7 +477,7 @@
             ]
         },
         {
-            "material": "minecraft:planks",
+            "material": "minecraft:planks[variant=birch]",
             "position": [
                 [
                     2,
@@ -527,7 +527,7 @@
             ]
         },
         {
-            "material": "minecraft:nether_brick_stairs",
+            "material": "minecraft:nether_brick_stairs[facing=north,shape=straight,half=bottom]",
             "position": [
                 [
                     2,
@@ -557,7 +557,7 @@
             ]
         },
         {
-            "material": "minecraft:birch_stairs",
+            "material": "minecraft:birch_stairs[facing=south,shape=straight,half=bottom]",
             "position": [
                 [
                     3,
@@ -567,7 +567,7 @@
             ]
         },
         {
-            "material": "minecraft:birch_stairs",
+            "material": "minecraft:birch_stairs[facing=north,shape=straight,half=bottom]",
             "position": [
                 [
                     3,
@@ -577,7 +577,7 @@
             ]
         },
         {
-            "material": "minecraft:nether_brick_stairs",
+            "material": "minecraft:nether_brick_stairs[facing=north,shape=straight,half=top]",
             "position": [
                 [
                     3,
@@ -587,7 +587,7 @@
             ]
         },
         {
-            "material": "minecraft:nether_brick_stairs",
+            "material": "minecraft:nether_brick_stairs[facing=west,shape=straight,half=bottom]",
             "position": [
                 [
                     4,
@@ -617,7 +617,7 @@
             ]
         },
         {
-            "material": "minecraft:birch_stairs",
+            "material": "minecraft:birch_stairs[facing=west,shape=straight,half=bottom]",
             "position": [
                 [
                     5,

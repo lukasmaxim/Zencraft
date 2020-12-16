@@ -7,7 +7,7 @@
     "offset": 0,
     "structure": [
         {
-            "material": "minecraft:cobblestone_wall",
+            "material": "minecraft:cobblestone_wall[north=false,west=false,variant=cobblestone,up=false,east=false,south=false]",
             "position": [
                 [
                     0,
@@ -22,7 +22,7 @@
             ]
         },
         {
-            "material": "minecraft:acacia_fence",
+            "material": "minecraft:acacia_fence[west=false,east=false,north=false,south=false]",
             "position": [
                 [
                     0,
@@ -67,7 +67,7 @@
             ]
         },
         {
-            "material": "minecraft:trapdoor",
+            "material": "minecraft:trapdoor[facing=west,open=false,half=bottom]",
             "position": [
                 [
                     0,
@@ -147,7 +147,7 @@
             ]
         },
         {
-            "material": "minecraft:acacia_fence_gate",
+            "material": "minecraft:acacia_fence_gate[facing=east,in_wall=false,open=false,powered=false]",
             "position": [
                 [
                     0,

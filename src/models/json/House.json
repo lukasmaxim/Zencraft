@@ -7,7 +7,7 @@
     "offset": 0,
     "structure": [
         {
-            "material": "minecraft:wooden_slab",
+            "material": "minecraft:wooden_slab[variant=dark_oak,half=top]",
             "position": [
                 [
                     0,
@@ -652,7 +652,7 @@
             ]
         },
         {
-            "material": "minecraft:cobblestone_wall",
+            "material": "minecraft:cobblestone_wall[north=false,west=false,variant=cobblestone,up=false,east=false,south=false]",
             "position": [
                 [
                     1,
@@ -717,7 +717,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_brick_stairs",
+            "material": "minecraft:stone_brick_stairs[facing=east,shape=straight,half=bottom]",
             "position": [
                 [
                     1,
@@ -897,7 +897,7 @@
             ]
         },
         {
-            "material": "minecraft:jungle_fence",
+            "material": "minecraft:jungle_fence[west=false,east=false,north=false,south=false]",
             "position": [
                 [
                     1,
@@ -1642,7 +1642,7 @@
             ]
         },
         {
-            "material": "minecraft:jungle_stairs",
+            "material": "minecraft:jungle_stairs[facing=east,shape=straight,half=top]",
             "position": [
                 [
                     1,
@@ -1747,7 +1747,7 @@
             ]
         },
         {
-            "material": "minecraft:jungle_stairs",
+            "material": "minecraft:jungle_stairs[facing=north,shape=straight,half=top]",
             "position": [
                 [
                     1,
@@ -1817,7 +1817,7 @@
             ]
         },
         {
-            "material": "minecraft:wool",
+            "material": "minecraft:wool[color=white]",
             "position": [
                 [
                     1,
@@ -2087,7 +2087,7 @@
             ]
         },
         {
-            "material": "minecraft:wooden_slab",
+            "material": "minecraft:wooden_slab[variant=dark_oak,half=bottom]",
             "position": [
                 [
                     1,
@@ -2752,7 +2752,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_brick_stairs",
+            "material": "minecraft:stone_brick_stairs[facing=south,shape=straight,half=bottom]",
             "position": [
                 [
                     2,
@@ -2857,7 +2857,7 @@
             ]
         },
         {
-            "material": "minecraft:stonebrick",
+            "material": "minecraft:stonebrick[variant=stonebrick]",
             "position": [
                 [
                     2,
@@ -4667,7 +4667,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_brick_stairs",
+            "material": "minecraft:stone_brick_stairs[facing=north,shape=straight,half=bottom]",
             "position": [
                 [
                     2,
@@ -4767,7 +4767,7 @@
             ]
         },
         {
-            "material": "minecraft:jungle_stairs",
+            "material": "minecraft:jungle_stairs[facing=south,shape=straight,half=top]",
             "position": [
                 [
                     2,
@@ -4832,7 +4832,7 @@
             ]
         },
         {
-            "material": "minecraft:double_wooden_slab",
+            "material": "minecraft:double_wooden_slab[variant=birch]",
             "position": [
                 [
                     2,
@@ -5117,7 +5117,7 @@
             ]
         },
         {
-            "material": "minecraft:wooden_slab",
+            "material": "minecraft:wooden_slab[variant=birch,half=top]",
             "position": [
                 [
                     3,
@@ -5887,7 +5887,7 @@
             ]
         },
         {
-            "material": "minecraft:quartz_block",
+            "material": "minecraft:quartz_block[variant=default]",
             "position": [
                 [
                     3,
@@ -6692,7 +6692,7 @@
             ]
         },
         {
-            "material": "minecraft:dark_oak_stairs",
+            "material": "minecraft:dark_oak_stairs[facing=east,shape=straight,half=bottom]",
             "position": [
                 [
                     3,
@@ -6867,7 +6867,7 @@
             ]
         },
         {
-            "material": "minecraft:carpet",
+            "material": "minecraft:carpet[color=yellow]",
             "position": [
                 [
                     4,
@@ -7087,7 +7087,7 @@
             ]
         },
         {
-            "material": "minecraft:wall_banner",
+            "material": "minecraft:wall_banner[facing=north]",
             "position": [
                 [
                     4,
@@ -7102,7 +7102,7 @@
             ]
         },
         {
-            "material": "minecraft:wall_banner",
+            "material": "minecraft:wall_banner[facing=south]",
             "position": [
                 [
                     4,
@@ -7122,7 +7122,7 @@
             ]
         },
         {
-            "material": "minecraft:stained_hardened_clay",
+            "material": "minecraft:stained_hardened_clay[color=black]",
             "position": [
                 [
                     4,
@@ -7227,7 +7227,7 @@
             ]
         },
         {
-            "material": "minecraft:carpet",
+            "material": "minecraft:carpet[color=brown]",
             "position": [
                 [
                     5,
@@ -7332,7 +7332,7 @@
             ]
         },
         {
-            "material": "minecraft:torch",
+            "material": "minecraft:torch[facing=south]",
             "position": [
                 [
                     7,
@@ -7342,7 +7342,7 @@
             ]
         },
         {
-            "material": "minecraft:torch",
+            "material": "minecraft:torch[facing=north]",
             "position": [
                 [
                     7,
@@ -7352,7 +7352,7 @@
             ]
         },
         {
-            "material": "minecraft:double_wooden_slab",
+            "material": "minecraft:double_wooden_slab[variant=dark_oak]",
             "position": [
                 [
                     7,
@@ -7442,7 +7442,7 @@
             ]
         },
         {
-            "material": "minecraft:dark_oak_stairs",
+            "material": "minecraft:dark_oak_stairs[facing=west,shape=straight,half=bottom]",
             "position": [
                 [
                     9,
@@ -7617,7 +7617,7 @@
             ]
         },
         {
-            "material": "minecraft:stone_brick_stairs",
+            "material": "minecraft:stone_brick_stairs[facing=west,shape=straight,half=bottom]",
             "position": [
                 [
                     12,
@@ -7792,7 +7792,7 @@
             ]
         },
         {
-            "material": "minecraft:jungle_stairs",
+            "material": "minecraft:jungle_stairs[facing=west,shape=straight,half=top]",
             "position": [
                 [
                     13,

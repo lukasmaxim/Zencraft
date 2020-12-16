@@ -7,7 +7,7 @@
     "offset": -4,
     "structure": [
         {
-            "material": "minecraft:dirt",
+            "material": "minecraft:dirt[variant=dirt,snowy=false]",
             "position": [
                 [
                     0,
@@ -3072,7 +3072,7 @@
             ]
         },
         {
-            "material": "minecraft:grass",
+            "material": "minecraft:grass[snowy=false]",
             "position": [
                 [
                     0,
@@ -3742,7 +3742,7 @@
             ]
         },
         {
-            "material": "minecraft:sand",
+            "material": "minecraft:sand[variant=sand]",
             "position": [
                 [
                     0,
@@ -3797,7 +3797,7 @@
             ]
         },
         {
-            "material": "minecraft:tallgrass",
+            "material": "minecraft:tallgrass[type=tall_grass]",
             "position": [
                 [
                     0,
@@ -3857,7 +3857,7 @@
             ]
         },
         {
-            "material": "minecraft:sandstone",
+            "material": "minecraft:sandstone[type=smooth_sandstone]",
             "position": [
                 [
                     1,
@@ -4247,7 +4247,7 @@
             ]
         },
         {
-            "material": "minecraft:water",
+            "material": "minecraft:water[level=0]",
             "position": [
                 [
                     2,
@@ -4947,7 +4947,7 @@
             ]
         },
         {
-            "material": "minecraft:red_flower",
+            "material": "minecraft:red_flower[type=allium]",
             "position": [
                 [
                     3,
@@ -4967,7 +4967,7 @@
             ]
         },
         {
-            "material": "minecraft:leaves",
+            "material": "minecraft:leaves[variant=birch,check_decay=false,decayable=false]",
             "position": [
                 [
                     3,
@@ -5017,7 +5017,7 @@
             ]
         },
         {
-            "material": "minecraft:water",
+            "material": "minecraft:water[level=9]",
             "position": [
                 [
                     4,
@@ -5037,7 +5037,7 @@
             ]
         },
         {
-            "material": "minecraft:water",
+            "material": "minecraft:water[level=1]",
             "position": [
                 [
                     4,
@@ -5057,7 +5057,7 @@
             ]
         },
         {
-            "material": "minecraft:water",
+            "material": "minecraft:water[level=8]",
             "position": [
                 [
                     6,
@@ -5397,7 +5397,7 @@
             ]
         },
         {
-            "material": "minecraft:monster_egg",
+            "material": "minecraft:monster_egg[variant=cobblestone]",
             "position": [
                 [
                     8,
@@ -5442,7 +5442,7 @@
             ]
         },
         {
-            "material": "minecraft:wooden_slab",
+            "material": "minecraft:wooden_slab[variant=acacia,half=top]",
             "position": [
                 [
                     8,
@@ -5492,7 +5492,7 @@
             ]
         },
         {
-            "material": "minecraft:double_wooden_slab",
+            "material": "minecraft:double_wooden_slab[variant=acacia]",
             "position": [
                 [
                     8,
@@ -5512,7 +5512,7 @@
             ]
         },
         {
-            "material": "minecraft:wooden_slab",
+            "material": "minecraft:wooden_slab[variant=acacia,half=bottom]",
             "position": [
                 [
                     8,
@@ -5532,7 +5532,7 @@
             ]
         },
         {
-            "material": "minecraft:acacia_fence",
+            "material": "minecraft:acacia_fence[west=false,east=false,north=false,south=false]",
             "position": [
                 [
                     8,
@@ -5562,7 +5562,7 @@
             ]
         },
         {
-            "material": "minecraft:stone",
+            "material": "minecraft:stone[variant=andesite]",
             "position": [
                 [
                     9,
@@ -5572,7 +5572,7 @@
             ]
         },
         {
-            "material": "minecraft:tallgrass",
+            "material": "minecraft:tallgrass[type=fern]",
             "position": [
                 [
                     15,
@@ -5607,7 +5607,7 @@
             ]
         },
         {
-            "material": "minecraft:red_flower",
+            "material": "minecraft:red_flower[type=blue_orchid]",
             "position": [
                 [
                     17,

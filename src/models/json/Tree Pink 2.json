@@ -7,7 +7,7 @@
     "offset": 0,
     "structure": [
         {
-            "material": "minecraft:wool",
+            "material": "minecraft:wool[color=pink]",
             "position": [
                 [
                     0,
@@ -112,7 +112,7 @@
             ]
         },
         {
-            "material": "minecraft:log",
+            "material": "minecraft:log[variant=birch,axis=y]",
             "position": [
                 [
                     2,
@@ -142,7 +142,7 @@
             ]
         },
         {
-            "material": "minecraft:concrete_powder",
+            "material": "minecraft:concrete_powder[color=pink]",
             "position": [
                 [
                     2,
