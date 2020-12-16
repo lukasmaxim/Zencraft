@@ -38,7 +38,7 @@ class FrontEnd():
                 for pos in substruct['position']:
                     blocks.append({
                             'x':pos[0]+structure['position'][0] + x_offset_plane - (plane_width//2),
-                            'y':pos[1]+y_offset_structures,
+                            'y':pos[1]+self.db[structure['name']]['offset'] + y_offset_structures,
                             'z':pos[2]+structure['position'][1] + z_offset_plane - (plane_length//2),
                             'material':substruct['material']
                         })        
