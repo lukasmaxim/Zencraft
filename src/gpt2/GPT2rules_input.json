@@ -1,0 +1,185 @@
+[
+    {
+          "name": "stone_formation_1",
+          "position": [
+                1,
+                0,
+                1
+          ],
+          "dim": [
+                11,
+                3,
+                10
+          ],
+          "orientation": "",
+          "rules": [
+                1,
+                2
+          ]
+    },
+    {
+          "name": "tree_green_2",
+          "position": [
+                13,
+                0,
+                1
+          ],
+          "dim": [
+                7,
+                9,
+                8
+          ],
+          "orientation": "",
+          "rules": []
+    },
+    {
+          "name": "stone_formation_2",
+          "position": [
+                21,
+                0,
+                1
+          ],
+          "dim": [
+                10,
+                3,
+                9
+          ],
+          "orientation": "",
+          "rules": [
+                1,
+                2
+          ]
+    },
+    {
+          "name": "tori",
+          "position": [
+                13,
+                0,
+                10
+          ],
+          "dim": [
+                1,
+                5,
+                5
+          ],
+          "orientation": "",
+          "rules": []
+    },
+    {
+          "name": "tree_pink_2",
+          "position": [
+                15,
+                0,
+                10
+          ],
+          "dim": [
+                5,
+                6,
+                5
+          ],
+          "orientation": "",
+          "rules": [
+                1,
+                2
+          ]
+    },
+    {
+          "name": "pavillion",
+          "position": [
+                21,
+                0,
+                11
+          ],
+          "dim": [
+                7,
+                9,
+                7
+          ],
+          "orientation": "",
+          "rules": []
+    },
+    {
+          "name": "tree_green_2",
+          "position": [
+                2,
+                0,
+                12
+          ],
+          "dim": [
+                7,
+                9,
+                8
+          ],
+          "orientation": "",
+          "rules": []
+    },
+    {
+          "name": "stone_formation_2",
+          "position": [
+                10,
+                0,
+                16
+          ],
+          "dim": [
+                10,
+                3,
+                9
+          ],
+          "orientation": "",
+          "rules": [
+                1,
+                2
+          ]
+    },
+    {
+          "name": "tree_green_1",
+          "position": [
+                25,
+                0,
+                19
+          ],
+          "dim": [
+                8,
+                7,
+                6
+          ],
+          "orientation": "",
+          "rules": []
+    },
+    {
+          "name": "stone_formation_4",
+          "position": [
+                1,
+                0,
+                22
+          ],
+          "dim": [
+                8,
+                2,
+                8
+          ],
+          "orientation": "",
+          "rules": [
+                1,
+                2
+          ]
+    },
+    {
+          "name": "tree_pink_2",
+          "position": [
+                17,
+                0,
+                26
+          ],
+          "dim": [
+                5,
+                6,
+                5
+          ],
+          "orientation": "",
+          "rules": [
+                1,
+                2
+          ]
+    }
+]

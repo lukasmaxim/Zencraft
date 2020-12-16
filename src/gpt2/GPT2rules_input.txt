@@ -1,0 +1,12 @@
+[
+ {'name': 'tree_pink_2', 'position': [1, 1], 'dim': [5, 6, 5], 'orientation': '', 'rules': [1, 2]},   
+ {'name': 'tree_pink_1', 'position': [7, 1], 'dim': [8, 12, 11], 'orientation': '', 'rules': [1, 2]}, 
+ {'name': 'tori', 'position': [16, 1], 'dim': [1, 5, 5], 'orientation': '', 'rules': []},
+ {'name': 'stone_formation_1', 'position': [18, 1], 'dim': [11, 3, 10], 'orientation': '', 'rules': [1, 
+  2]}, 
+ {'name': 'tree_pink_2', 'position': [2, 7], 'dim': [5, 6, 5], 'orientation': '', 'rules': [1, 2]}, 
+ {'name': 'pagoda', 'position': [16, 12], 'dim': [13, 37, 16], 'orientation': '', 'rules': []},
+ {'name': 'tree_pink_1', 'position': [1, 13], 'dim': [8, 12, 11], 'orientation': '', 'rules': [1, 2]}, 
+ {'name': 'pavillion', 'position': [10, 13], 'dim': [7, 9, 7], 'orientation': '', 'rules': []},
+ {'name': 'tree_pink_2', 'position': [6, 26], 'dim': [5, 6, 5], 'orientation': '', 'rules': [1, 2]}
+]
