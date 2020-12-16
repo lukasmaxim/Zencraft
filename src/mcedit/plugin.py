@@ -8,7 +8,7 @@ class ZenCraft(SimpleCommandPlugin):
     options = [
         {
             'type': 'text',
-            'value': 'mock.json',
+            'value': 'main.json',
             'name': 'dbName',
             'text': 'Database Filename',
         },
@@ -20,15 +20,15 @@ class ZenCraft(SimpleCommandPlugin):
         },
         {
             'type': 'int',
-            'value': 100,
+            'value': 200,
             'min': 0,
-            'max': 200,
+            'max': 1000,
             'name': 'planeSize',
             'text': 'Plane Size',
         },
         {
             'type': 'int',
-            'value': 1,
+            'value': 10,
             'min': 0,
             'max': 100,
             'name': 'yOffsetPlane',
@@ -36,7 +36,23 @@ class ZenCraft(SimpleCommandPlugin):
         },
         {
             'type': 'int',
-            'value': 1,
+            'value': 0,
+            'min': -5000,
+            'max': 5000,
+            'name': 'xOffsetPlane',
+            'text': 'Plane X',
+        },
+                {
+            'type': 'int',
+            'value': 0,
+            'min': -5000,
+            'max': 5000,
+            'name': 'zOffsetPlane',
+            'text': 'Plane Y',
+        },
+        {
+            'type': 'int',
+            'value': 11,
             'min': 0,
             'max': 100,
             'name': 'yOffsetStructures',
@@ -48,7 +64,7 @@ class ZenCraft(SimpleCommandPlugin):
         dimensions = [-options['planeSize']//2, options['planeSize']//2, -options['planeSize']//2, options['planeSize']//2]
         frontend = FrontEnd(options['dbName'], dimensions)
 
-        blocks = frontend.generate(options['yOffsetStructures'], options['yOffsetPlane'], options['groundMaterial'])
+        blocks = frontend.generate(options['yOffsetStructures'], options['xOffsetPlane'], options['yOffsetPlane'], options['zOffsetPlane'], options['groundMaterial'])
 
         for block in blocks:
             dimension.setBlock(block['x'], block['y'], block['z'], block['material'])

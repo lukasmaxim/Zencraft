@@ -1,6 +1,6 @@
 import random
 
-class Cell:
+class Cell(object):
 #   The Cell class is the superclass of all other cell classes.  It represents a
 #   single cell on the level.  By itself, it represents a blank or "open space" 
 #   cell

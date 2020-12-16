@@ -22,7 +22,7 @@ STRUCTURES = {
     'tree_pink_2': {'dim': [5, 6, 5], 'symbol': 'TP2', 'rules': [1,2]}
 }
 
-class Level:
+class Level(object):
     STRUCTURE_LIMIT = 5
 
     def __init__(self, width, height, start=None):

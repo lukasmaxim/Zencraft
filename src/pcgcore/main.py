@@ -4,7 +4,6 @@ import random
 from level import *
 
 
-# Note this is a mock implementation of the actual PCGCore
 class PCGCore:
 
     def __init__(self, db_name, dimensions):
