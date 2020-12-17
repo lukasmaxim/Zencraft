@@ -38,9 +38,14 @@ for filename in os.listdir(in_dir):
 
                 material_string += "["
 
-                for prop in sorted(properties):
-                    value = material["Properties"].get(prop)
+                props = {}
 
+                for prop in properties:
+
+                    props[prop] = properties.get(prop)
+
+                for prop in sorted(props):
+                    value = props[prop]
                     material_string = material_string + prop + "=" + value + ","
 
                 material_string = material_string[:-1]
