@@ -57,5 +57,5 @@ for filename in os.listdir(in_dir):
 
         to_json[filename.split('.')[0]] = structure_to_json
 
-    with open(out_dir + "structures", 'w') as outfile:
+    with open(out_dir + "structures" + ".json", 'w') as outfile:
         outfile.write(json.dumps(to_json))
