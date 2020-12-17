@@ -7,7 +7,7 @@ from offset_lookup import offset_lookup
 cwd = os.getcwd()
 
 in_dir = cwd + '/src/models/nbt/'
-out_dir = cwd + '/src/models/json/'
+out_dir = cwd + '/src/models/'
 
 to_json = {}
 

@@ -3,7 +3,7 @@ offset_lookup = {
     "filler_2": 1,
     "filler_3": -1,
     "house": 0,
-    "pavilion":0,
+    "pavillion":0,
     "lake": -4,
     "pagoda": 0,
     "river": -3,
