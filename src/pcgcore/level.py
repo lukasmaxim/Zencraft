@@ -132,6 +132,7 @@ class Level(object):
             self.structures.append(
                 StructureInfo(struct_key, x_cur, y_cur, struct_width, struct_height)
             )
+            self.struct_count += 1
         elif self.isAdded(struct_key): 
             print('%s was already added. Can only have one of its type' % (struct_key))
         else:
