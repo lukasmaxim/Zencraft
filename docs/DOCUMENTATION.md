@@ -1,18 +1,18 @@
 # Documentation
 
-*Everytime we learn something about the frameworks or have some other epiphany we add it here*
 
-## General
-Nothing here
+### Information
+This project works best with an empty world. The plugin will create a ground plane for you.
 
-## Frameworks/Software
-Nothing here
+### How to deploy to MCEdit2
+- Copy all files in this directory
+- Create the folder $MCEDIT2_DIR$/MCEdit 2 Files/plugins/ZenCraft
+- Paste the items there
+- Start MCEdit
+- The Plugin can be launched in the Plugins menu
 
-## Project Ideas
-Nothing here
-
-## Aesthetics
-No -A E S T H E T I C S- here
-
-## Narrative
-Nothing here
+### How to use
+- Open up MCEdit 2 with an empty world file
+- Click on the Plugins menu item and select "ZenCraft"
+- Adjust the options to your liking
+- Run the plugin and see the generated world
