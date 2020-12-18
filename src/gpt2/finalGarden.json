@@ -1,0 +1,168 @@
+[
+    {
+          "name": "stone_formation_2",
+          "position": [
+                11,
+                14
+          ],
+          "dim": [
+                10,
+                3,
+                9
+          ],
+          "orientation": "",
+          "rules": [
+                1,
+                2,
+                15,
+                16
+          ]
+    },
+    {
+          "name": "stone_formation_3",
+          "position": [
+                25,
+                23
+          ],
+          "dim": [
+                11,
+                3,
+                8
+          ],
+          "orientation": "",
+          "rules": [
+                1,
+                2,
+                15,
+                16
+          ]
+    },
+    {
+          "name": "stone_formation_3",
+          "position": [
+                15,
+                28
+          ],
+          "dim": [
+                11,
+                3,
+                8
+          ],
+          "orientation": "",
+          "rules": [
+                1,
+                2,
+                15,
+                16
+          ]
+    },
+    {
+          "name": "tori",
+          "position": [
+                45,
+                49
+          ],
+          "dim": [
+                1,
+                5,
+                5
+          ],
+          "orientation": "",
+          "rules": []
+    },
+    {
+          "name": "lake",
+          "position": [
+                28,
+                3
+          ],
+          "dim": [
+                19,
+                6,
+                18
+          ],
+          "orientation": "",
+          "rules": [
+                3
+          ]
+    },
+    {
+          "name": "pavillion",
+          "position": [
+                3,
+                27
+          ],
+          "dim": [
+                7,
+                9,
+                7
+          ],
+          "orientation": "",
+          "rules": []
+    },
+    {
+          "name": "stone_formation_1",
+          "position": [
+                13,
+                1
+          ],
+          "dim": [
+                11,
+                3,
+                10
+          ],
+          "orientation": "",
+          "rules": [
+                1,
+                2,
+                15,
+                16
+          ]
+    },
+    {
+          "name": "house",
+          "position": [
+                1,
+                2
+          ],
+          "dim": [
+                15,
+                11,
+                23
+          ],
+          "orientation": "",
+          "rules": []
+    },
+    {
+          "name": "tree_green_1",
+          "position": [
+                35,
+                33
+          ],
+          "dim": [
+                8,
+                7,
+                6
+          ],
+          "orientation": "",
+          "rules": [
+                13
+          ]
+    },
+    {
+          "name": "tree_pink_1",
+          "position": [
+                11,
+                43
+          ],
+          "dim": [
+                8,
+                12,
+                11
+          ],
+          "orientation": "",
+          "rules": [
+                13
+          ]
+    }
+] 
