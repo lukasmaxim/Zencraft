@@ -27,7 +27,7 @@ class PCGCore:
         '''
         width = self.dimensions[1] - self.dimensions[0]
         height = self.dimensions[3] - self.dimensions[2]
-        level = Level(width, height)
+        level = Level(width, height, struct_limit=10, random_placement=True)
         print('Structures added')
         for struct in level.structures:
             print(struct)

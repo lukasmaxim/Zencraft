@@ -25,10 +25,15 @@ STRUCTURES = {
 class Level(object):
     STRUCTURE_LIMIT = 5
 
-    def __init__(self, width, height, start=None):
+    def __init__(self, width, height, **kwargs):
         self.width, self.height, self.map, self.structures = width, height, {}, []
+        self.struct_limit = kwargs['struct_limit']
+        self.struct_count = 0
         self.buildBlankLevel()
-        self.placeStructures()
+        if kwargs['random_placement']:
+            self.placeStructuresRandom()
+        else:
+            self.placeStructures()
         
     def buildBlankLevel(self):
         self.map.update({ (i,j):Cell(i,j)
@@ -43,11 +48,19 @@ class Level(object):
                             for i in [0, self.width+1]
                             for j in range(self.height+2)
             })
+    
+    def placeStructuresRandom(self):
+        x_positions = [x+1 for x in range(self.width - 1)]
+        y_positons = [y+1 for y in range(self.height - 1)]
+        while (self.struct_count < self.struct_limit):
+            x_cur = random.choice(x_positions)
+            y_cur = random.choice(y_positons)
+            self.placeStructure(x_cur, y_cur)
 
     def placeStructures(self):
         x_cur = 1
         y_cur = 1
-        while y_cur < self.height - 1:
+        while (y_cur < self.height - 1) and (self.struct_count < self.struct_limit):
             if  isinstance(self.map[(x_cur, y_cur)], Wall) or isinstance(self.map[(x_cur, y_cur)], Structure):
                 if x_cur == self.width:
                     x_cur = 1
@@ -209,7 +222,7 @@ class Level(object):
                     })
 
     def isAdded(self, key):
-        if ((key in ['tori', 'river', 'lake', 'river', 'pavillion']) and \
+        if ((key in ['tori', 'river', 'lake', 'river', 'pavillion', 'pagoda', 'house']) and \
             (key in [struct.key for struct in self.structures])):
             return True
         else:
