@@ -21,6 +21,7 @@ This project works best with an empty world. The plugin will create a ground pla
 - Sign Into Google
 - Open ZenCraftGPT2.ipynb with collabratory 
 - Start with GPU runtime
+- Mount personal Google Drive
 - Either load finetuning checkpoint from drive or run finetunning segment
 - choose garden gen output json and copy into SimputUrl in Parsing Simba's Output 
 - change/enter git hub login credentials when prompted
