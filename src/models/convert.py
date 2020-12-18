@@ -9,11 +9,13 @@ cwd = os.getcwd()
 in_dir = cwd + '/src/models/nbt/'
 out_dir = cwd + '/src/models/json/'
 
+to_json = {}
+
 for filename in os.listdir(in_dir):
     if not filename.endswith('.nbt'):
         continue
 
-    to_json = {
+    structure_to_json = {
         "dimensions": [],
         "offset": None,
         "structure": []
@@ -27,8 +29,8 @@ for filename in os.listdir(in_dir):
         palette = root.get('palette')
 
         for i, material in enumerate(palette):
-            to_json["dimensions"] = [size[0], size[1], size[2]]
-            to_json["offset"] = offset_lookup.get(filename.split('.')[0], "not in lookup")
+            structure_to_json["dimensions"] = [size[0], size[1], size[2]]
+            structure_to_json["offset"] = offset_lookup.get(filename.split('.')[0], "not in lookup")
             material_string = str(material["Name"])
 
             if "Properties" in material:
@@ -36,24 +38,29 @@ for filename in os.listdir(in_dir):
 
                 material_string += "["
 
-                for prop in properties:
-                    value = material["Properties"].get(prop)
+                props = {}
 
+                for prop in properties:
+
+                    props[prop] = properties.get(prop)
+
+                for prop in sorted(props):
+                    value = props[prop]
                     material_string = material_string + prop + "=" + value + ","
 
                 material_string = material_string[:-1]
                 material_string += "]"
 
-            to_json["structure"].append(
+            structure_to_json["structure"].append(
                 {"material": material_string, "position": []})
 
             for block in blocks:
                 if block["state"] == i:
                     pos = block["pos"]
-                    to_json["structure"][i]["position"].append(
+                    structure_to_json["structure"][i]["position"].append(
                         [int(pos[0]), int(pos[1]), int(pos[2])])
 
-        outname = filename.split('.')[0] + '.json'
+        to_json[filename.split('.')[0]] = structure_to_json
 
-        with open(out_dir + outname, 'w') as outfile:
-            outfile.write(json.dumps(to_json))
+    with open(out_dir + "structures" + ".json", 'w') as outfile:
+        outfile.write(json.dumps(to_json))
