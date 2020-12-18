@@ -4,7 +4,7 @@ from ..pcgcore.main import PCGCore
 
 class FrontEnd():
 
-    def __init__(self, db_name, dimensions):
+    def __init__(self, db_name, dimensions, structure_padding, max_no_buildings, max_no_nature):
 
         json_file_path = os.path.dirname(os.path.realpath(__file__))
         json_file_path = os.path.join(json_file_path, '../db/', db_name)
@@ -12,7 +12,7 @@ class FrontEnd():
             self.db = json.load(json_file)
 
         self.dimensions = dimensions
-        self.pcg = PCGCore(db_name, dimensions)
+        self.pcg = PCGCore(db_name, dimensions, structure_padding, max_no_buildings, max_no_nature)
 
     def generate(self, y_offset_structures, x_offset_plane, y_offset_plane, z_offset_plane, ground_material):
         blocks = []

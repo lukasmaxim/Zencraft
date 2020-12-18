@@ -3,7 +3,17 @@ import random
 
 STRUCTURE_KEYS = ['house', 'lake', 'pagoda', 'pavillion', 'river', 'stone_formation_1',
                   'stone_formation_2', 'stone_formation_3', 'stone_formation_4',
-                  'tori', 'tree_green_1', 'tree_green_2', 'tree_pink_1', 'tree_pink_2']
+                  'tori', 'tree_green_1', 'tree_green_2', 'tree_pink_1', 'tree_pink_2', 
+                  'stone_horizontal_1_ratio_rule',
+                  'stone_horizontal_2_ratio_rule',
+                  'stone_horizontal_3_ratio_rule',
+                  'stone_vertical_1_ratio_rule',
+                  'stone_vertical_2_ratio_rule',
+                  'filler_1',
+                  'filler_2',
+                  'filler_3',
+                  'waterfall'
+                  ]
 
 STRUCTURES = {
     'house': {'dim': [15, 11, 23], 'symbol':'H', 'rules':[]},
@@ -11,22 +21,45 @@ STRUCTURES = {
     'pagoda': {'dim': [13, 37, 16], 'symbol': 'A', 'rules': []},
     'pavillion': {'dim': [7, 9, 7], 'symbol': 'P', 'rules': []},
     'river': {'dim': [26, 6, 40], 'symbol': '~', 'rules': [5,6]},
-    'stone_formation_1': {'dim': [11, 3, 10], 'symbol':'^', 'rules': [1,2]},
-    'stone_formation_2': {'dim': [10, 3, 9], 'symbol': 'o', 'rules': [1,2]},
-    'stone_formation_3': {'dim': [11, 3, 8], 'symbol': 'x', 'rules': [1,2]},
-    'stone_formation_4': {'dim': [8, 2, 8], 'symbol': '@', 'rules': [1,2]},
+    # 'stone_formation_1': {'dim': [11, 3, 10], 'symbol':'^', 'rules': [1,2]},
+    # 'stone_formation_2': {'dim': [10, 3, 9], 'symbol': 'o', 'rules': [1,2]},
+    # 'stone_formation_3': {'dim': [11, 3, 8], 'symbol': 'x', 'rules': [1,2]},
+    # 'stone_formation_4': {'dim': [8, 2, 8], 'symbol': '@', 'rules': [1,2]},
+    'stone_formation_1': {'dim': [9, 3, 8], 'symbol':'^', 'rules': [1,2]},
+    'stone_formation_2': {'dim': [8, 3, 7], 'symbol': 'o', 'rules': [1,2]},
+    'stone_formation_3': {'dim': [9, 3, 6], 'symbol': 'x', 'rules': [1,2]},
+    'stone_formation_4': {'dim': [6, 2, 6], 'symbol': '@', 'rules': [1,2]},
     'tori': {'dim': [1, 5, 5], 'symbol': 'T', 'rules': []},
     'tree_green_1': {'dim': [8, 7, 6], 'symbol': 'TG1', 'rules': []},
     'tree_green_2': {'dim': [7, 9, 8], 'symbol': 'TG2', 'rules': []},
     'tree_pink_1': {'dim': [8, 12, 11], 'symbol': 'TP1', 'rules': [1,2]},
-    'tree_pink_2': {'dim': [5, 6, 5], 'symbol': 'TP2', 'rules': [1,2]}
+    'tree_pink_2': {'dim': [5, 6, 5], 'symbol': 'TP2', 'rules': [1,2]},
+    'waterfall': {'dim': [16,11,19], 'symbol': 'W', 'rules': []},
+    # 'stone_horizontal_1_ratio_rule': {'dim': [3,2,5], 'symbol': 'H1', 'rules': []},
+    # 'stone_horizontal_2_ratio_rule': {'dim': [3,3,5], 'symbol': 'H2', 'rules': []},
+    # 'stone_horizontal_3_ratio_rule': {'dim': [3,3,5], 'symbol': 'H3', 'rules': []},
+    # 'stone_vertical_1_ratio_rule': {'dim': [4,4,4], 'symbol': 'V1', 'rules': []},
+    # 'stone_vertical_2_ratio_rule': {'dim': [3,5,4], 'symbol': 'V2', 'rules': []},
+    'filler_1': {'dim': [2,1,3], 'symbol': 'W', 'rules': []},
+    'filler_2': {'dim': [3,1,5], 'symbol': 'W', 'rules': []},
+    'filler_3': {'dim': [6,4,7], 'symbol': 'W', 'rules': []},
+    'stone_horizontal_1_ratio_rule': {'dim': [1,2,3], 'symbol': 'H1', 'rules': []},
+    'stone_horizontal_2_ratio_rule': {'dim': [1,3,3], 'symbol': 'H2', 'rules': []},
+    'stone_horizontal_3_ratio_rule': {'dim': [1,3,3], 'symbol': 'H3', 'rules': []},
+    'stone_vertical_1_ratio_rule': {'dim': [2,4,2], 'symbol': 'V1', 'rules': []},
+    'stone_vertical_2_ratio_rule': {'dim': [1,5,2], 'symbol': 'V2', 'rules': []},
 }
 
 class Level(object):
     STRUCTURE_LIMIT = 5
 
-    def __init__(self, width, height, start=None):
+    def __init__(self, width, height, structure_padding, max_no_buildings, max_no_nature, start=None):
         self.width, self.height, self.map, self.structures = width, height, {}, []
+        self.structure_padding = structure_padding
+        self.max_no_buildings = max_no_buildings
+        self.max_no_nature = max_no_nature
+        self.no_builindgs = 0
+        self.no_nature = 0
         self.buildBlankLevel()
         self.placeStructures()
         
@@ -63,6 +96,9 @@ class Level(object):
                     x_cur += 1
 
     def placeStructure(self, x_cur, y_cur):
+        if (self.no_builindgs > self.max_no_buildings) and (self.no_nature > self.max_no_nature):
+            return
+
         # Determine width
         #################
         # find available width
@@ -84,15 +120,25 @@ class Level(object):
         available_height = y - y_cur
 
         # Find structure that fits in the available area
-        trials = 10
+        trials = 0
         struct_key = random.choice(STRUCTURE_KEYS)
-        struct_width = STRUCTURES[struct_key]['dim'][0]
-        struct_height = STRUCTURES[struct_key]['dim'][2]
+        struct_width = int(STRUCTURES[struct_key]['dim'][0]*self.structure_padding)
+        struct_height = int(STRUCTURES[struct_key]['dim'][2]*self.structure_padding)
         struct_area = struct_width * struct_height
-        while ((self.isAdded(struct_key) or struct_area > (available_width * available_height)) and trials < 10):
+        while ((self.no_builindgs > self.max_no_buildings and self.isBuilindg(struct_key)) \
+                and (self.no_nature > self.max_no_nature and self.isNature(struct_key)) \
+                and (self.isAdded(struct_key) or struct_area > (available_width * available_height)) \
+                and trials < 10):
             struct_key = random.choice(STRUCTURE_KEYS)
+            #struct_width = int(STRUCTURES[struct_key]['dim'][0]*self.structure_padding)
+            #struct_height = int(STRUCTURES[struct_key]['dim'][2]*self.structure_padding)
             struct_area = struct_width * struct_height
             trials += 1
+
+        if self.isBuilindg(struct_key):
+            self.no_builindgs += 1
+        else:
+            self.no_nature += 1
 
         if struct_area <= (available_width * available_height) and not self.isAdded(struct_key):
             print('Adding %s which fits in the available area at: (%s, %s)' % (struct_key, x_cur, y_cur))
@@ -214,6 +260,37 @@ class Level(object):
             return True
         else:
             return False
+
+    def isBuilindg(self, key):
+        return key in [
+            'house', 
+            'pagoda', 
+            'pavillion', 
+            'tori'
+            ]
+
+    def isNature(self, key):
+        return key in [
+            'filler_1', 
+            'filler_2', 
+            'filler_3', 
+            'lake', 
+            'river', 
+            'stone_formation_1', 
+            'stone_formation_2', 
+            'stone_formation_3', 
+            'stone_formation_4', 
+            'stone_horizontal_1_ratio_rule', 
+            'stone_horizontal_2_ratio_rule', 
+            'stone_horizontal_3_ratio_rule', 
+            'stone_vertical_1_ratio_rule',
+            'stone_vertical_2_ratio_rule',
+            'tree_green_1',
+            'tree_green_2',
+            'tree_pink_1',
+            'tree_pink_2',
+            'waterfall'
+            ]
     
     def getStructures(self):
         structs = []

@@ -4,7 +4,7 @@ offset_lookup = {
     "filler_3": -1,
     "house": 0,
     "pavilion":0,
-    "lake": -4,
+    "lake": -3,
     "pagoda": 0,
     "river": -3,
     "stone_formation_1": -1,

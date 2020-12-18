@@ -36,7 +36,7 @@ class ZenCraft(SimpleCommandPlugin):
         },
         {
             'type': 'int',
-            'value': 0,
+            'value': 850,
             'min': -5000,
             'max': 5000,
             'name': 'xOffsetPlane',
@@ -44,7 +44,7 @@ class ZenCraft(SimpleCommandPlugin):
         },
                 {
             'type': 'int',
-            'value': 0,
+            'value': 250,
             'min': -5000,
             'max': 5000,
             'name': 'zOffsetPlane',
@@ -58,11 +58,35 @@ class ZenCraft(SimpleCommandPlugin):
             'name': 'yOffsetStructures',
             'text': 'Structure Height',
         },
+        {
+            'type': 'float',
+            'value': 1,
+            'min': 0,
+            'max': 10,
+            'name': 'structurePadding',
+            'text': 'Structure Padding',
+        },
+        {
+            'type': 'int',
+            'value': 5,
+            'min': 0,
+            'max': 500,
+            'name': 'maxBuildings',
+            'text': 'Max No. Buildings',
+        },
+        {
+            'type': 'int',
+            'value': 5,
+            'min': 0,
+            'max': 500,
+            'name': 'maxNature',
+            'text': 'Max No. Natural Structures',
+        },
     ]
 
     def perform(self, dimension, selection, options):
         dimensions = [-options['planeSize']//2, options['planeSize']//2, -options['planeSize']//2, options['planeSize']//2]
-        frontend = FrontEnd(options['dbName'], dimensions)
+        frontend = FrontEnd(options['dbName'], dimensions, options['structurePadding'], options['maxBuildings'], options['maxNature'])
 
         blocks = frontend.generate(options['yOffsetStructures'], options['xOffsetPlane'], options['yOffsetPlane'], options['zOffsetPlane'], options['groundMaterial'])
 

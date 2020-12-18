@@ -25250,7 +25250,7 @@
             6,
             18
         ],
-        "offset": -4,
+        "offset": -3,
         "structure": [
             {
                 "material": "minecraft:dirt[snowy=false,variant=dirt]",
