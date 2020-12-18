@@ -16,3 +16,13 @@ This project works best with an empty world. The plugin will create a ground pla
 - Click on the Plugins menu item and select "ZenCraft"
 - Adjust the options to your liking
 - Run the plugin and see the generated world
+
+### How to run GPT2
+- Sign Into Google
+- Open ZenCraftGPT2.ipynb with collabratory 
+-Start with GPU runtime
+-Either load finetuning checkpoint from drive or run finetunning segment
+-choose garden gen output json and copy into SimputUrl in Parsing Simba's Output 
+-change/enter git hub login credentials when prompted
+- Save to desired output file
+-Sucess you now have your chronicle output to be added into minecraft
