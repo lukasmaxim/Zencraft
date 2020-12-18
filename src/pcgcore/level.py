@@ -11,15 +11,15 @@ STRUCTURES = {
     'pagoda': {'dim': [13, 37, 16], 'symbol': 'A', 'rules': []},
     'pavillion': {'dim': [7, 9, 7], 'symbol': 'P', 'rules': []},
     'river': {'dim': [26, 6, 40], 'symbol': '~', 'rules': [5,6]},
-    'stone_formation_1': {'dim': [11, 3, 10], 'symbol':'^', 'rules': [1,2]},
-    'stone_formation_2': {'dim': [10, 3, 9], 'symbol': 'o', 'rules': [1,2]},
-    'stone_formation_3': {'dim': [11, 3, 8], 'symbol': 'x', 'rules': [1,2]},
-    'stone_formation_4': {'dim': [8, 2, 8], 'symbol': '@', 'rules': [1,2]},
+    'stone_formation_1': {'dim': [11, 3, 10], 'symbol':'^', 'rules': [1,2,15,16]},
+    'stone_formation_2': {'dim': [10, 3, 9], 'symbol': 'o', 'rules': [1,2,15,16]},
+    'stone_formation_3': {'dim': [11, 3, 8], 'symbol': 'x', 'rules': [1,2,15,16]},
+    'stone_formation_4': {'dim': [8, 2, 8], 'symbol': '@', 'rules': [1,2,15,16]},
     'tori': {'dim': [1, 5, 5], 'symbol': 'T', 'rules': []},
-    'tree_green_1': {'dim': [8, 7, 6], 'symbol': 'TG1', 'rules': []},
-    'tree_green_2': {'dim': [7, 9, 8], 'symbol': 'TG2', 'rules': []},
-    'tree_pink_1': {'dim': [8, 12, 11], 'symbol': 'TP1', 'rules': [1,2]},
-    'tree_pink_2': {'dim': [5, 6, 5], 'symbol': 'TP2', 'rules': [1,2]}
+    'tree_green_1': {'dim': [8, 7, 6], 'symbol': 'TG1', 'rules': [13]},
+    'tree_green_2': {'dim': [7, 9, 8], 'symbol': 'TG2', 'rules': [13]},
+    'tree_pink_1': {'dim': [8, 12, 11], 'symbol': 'TP1', 'rules': [13]},
+    'tree_pink_2': {'dim': [5, 6, 5], 'symbol': 'TP2', 'rules': [13]}
 }
 
 class Level(object):
